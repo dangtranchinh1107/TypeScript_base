@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 type Props = {
   products: TProduct[];
 };
-
+// Props: truyền dữ liệu giữa các components
 const Products = ({ products }: Props) => {
   console.log(products);
 
@@ -15,6 +15,7 @@ const Products = ({ products }: Props) => {
       </h1>
       <div className="row gx-5">
         {products.map((item) => (
+          // map dùng để loop
           <div
             key={item.id}
             className="col col-sm-12 col-md-6 col-lg-4 col-xl-3 "
